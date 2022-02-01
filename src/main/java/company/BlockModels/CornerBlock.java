@@ -24,12 +24,12 @@ public class CornerBlock implements CompositeBlock {
         return material;
     }
 
-    public void add(CompositeBlock compositeBlockChild) {
-        cornerBlockList.add(compositeBlockChild);
-    }
-
     @Override
     public List getBlocks() {
         return cornerBlockList;
+    }
+
+    public void add(CompositeBlock compositeBlockChild) {
+        cornerBlockList.add(compositeBlockChild);
     }
 }
